@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sooriya Mushrooms | Fresh & Healthy Mushrooms</title>
+
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, sans-serif;
+    color:#333;
+    line-height:1.6;
+
+}
+
+
+h2{
+
+    text-align:center;
+    color:#67d76d;
+    margin-bottom:30px;
+
+}
+
+
+/* ================= NAVBAR ================= */
+
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 50px;
+
+    background:#000000;
+
+}
+
+
+.logo h2{
+
+    color:white;
+    margin:0;
+
+}
+
+
+
+.nav-links{
+
+    display:flex;
+    list-style:none;
+    gap:25px;
+
+}
+
+
+
+.nav-links a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+
+
+.nav-links a:hover{
+
+    color:#c8e6c9;
+
+}
+
+
+
+
+/* ================= HERO ================= */
+
+
+.hero{
+
+    height:600px;
+
+    background-image:
+
+    linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)
+    ),
+
+    url("images/OIP.webp");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+
+}
+
+
+
+.hero h1{
+
+    font-size:55px;
+
+}
+
+
+
+.hero p{
+
+    font-size:20px;
+
+    margin:20px;
+
+}
+
+
+
+.btn{
+
+    background:#81c784;
+
+    padding:12px 30px;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+}
+
+
+
+
+
+/* ================= INTRO ================= */
+
+
+.intro{
+
+    padding:70px 100px;
+
+    text-align:center;
+
+}
+
+
+
+.intro p{
+
+    font-size:18px;
+
+}
+
+
+
+
+/* ================= FEATURES ================= */
+
+
+.features{
+
+    background:#f1f8e9;
+
+    padding:60px;
+
+
+}
+
+
+
+.feature-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+
+
+
+.feature-card{
+
+    background:white;
+
+    width:300px;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px #ccc;
+
+}
+
+
+
+
+
+/* ================= PRODUCTS ================= */
+
+
+.products{
+
+    padding:70px;
+
+}
+
+
+
+.product-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+
+
+
+.product-card{
+
+    width:300px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px #ccc;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+
+
+.product-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+
+
+.product-card h3{
+
+    color:#2e7d32;
+
+    margin:15px;
+
+}
+
+
+
+
+/* ================= REVIEWS ================= */
+
+
+.reviews{
+
+    background:#fafafa;
+
+    padding:60px;
+
+}
+
+
+.review-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+
+
+
+.review-card{
+
+    width:350px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px #ddd;
+
+    text-align:center;
+
+}
+
+
+
+
+
+/* ================= CONTACT ================= */
+
+
+.contact{
+
+    background:#2e7d32;
+
+    color:white;
+
+    padding:60px;
+
+    text-align:center;
+
+}
+
+
+.contact h2{
+
+    color:white;
+
+}
+
+
+
+/* ================= FOOTER ================= */
+
+
+footer{
+
+    background:#1b5e20;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:900px){
+
+
+.navbar{
+
+    flex-direction:column;
+
+}
+
+
+.nav-links{
+
+    flex-direction:column;
+
+    margin-top:20px;
+
+}
+
+
+.feature-container,
+.product-container,
+.review-container{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+.hero h1{
+
+    font-size:35px;
+
+}
+
+
+}
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- NAVIGATION -->
+
+<header>
+
+
+<nav class="navbar">
+
+
+<div class="logo">
+
+<h2>Sooriya Mushrooms</h2>
+
+</div>
+
+
+
+<ul class="nav-links">
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">About Us</a></li>
+
+<li><a href="#">Company Profile</a></li>
+
+<li><a href="#">Products</a></li>
+
+<li><a href="#">Recipes</a></li>
+
+<li><a href="#">Nutrition & Tips</a></li>
+
+<li><a href="#">Contact Us</a></li>
+
+</ul>
+
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+
+<div>
+
+
+<h1>
+Fresh, Natural & Healthy Mushrooms
+</h1>
+
+
+<p>
+Premium quality mushrooms cultivated with care by Sooriya Mushrooms.
+</p>
+
+
+
+<a href="#" class="btn">
+Explore Products
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- INTRO -->
+
+
+<section class="intro">
+
+
+<h2>
+Welcome to Sooriya Mushrooms
+</h2>
+
+
+<p>
+
+
+<B>Sooriya Mushrooms</B> is dedicated to providing fresh,
+ high-quality, and nutritious mushrooms cultivated with 
+ care and modern farming methods.We focus on delivering 
+ healthy, natural, and delicious mushroom products while
+  maintaining the highest standards of quality and hygiene.
+
+<pre>Sooriya Mushrooms — Fresh, Healthy, and Naturally Grown</pre>
+
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+<!-- FEATURES -->
+
+
+<section class="features">
+
+
+<h2>
+Why Choose Us?
+</h2>
+
+
+
+<div class="feature-container">
+
+
+<div class="feature-card">
+
+<h3>Fresh Quality</h3>
+
+<p>
+Freshly harvested mushrooms with excellent taste.
+</p>
+
+</div>
+
+
+
+<div class="feature-card">
+
+<h3>Healthy Food</h3>
+
+<p>
+Rich in protein, vitamins and minerals.
+</p>
+
+</div>
+
+
+
+<div class="feature-card">
+
+<h3>Natural Farming</h3>
+
+<p>
+Safe and hygienic mushroom cultivation.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- PRODUCTS -->
+
+
+<section class="products">
+
+
+<h2>
+Best Selling Products
+</h2>
+
+
+<div class="product-container">
+
+
+<div class="product-card">
+
+<img src="images/products/oyster.jpg">
+
+<h3>
+Oyster Mushroom
+</h3>
+
+<p>
+Fresh oyster mushrooms
+</p>
+
+</div>
+
+
+
+
+<div class="product-card">
+
+<img src="images/products/milky.jpg">
+
+<h3>
+Milky Mushroom
+</h3>
+
+<p>
+Naturally grown mushrooms
+</p>
+
+</div>
+
+
+
+
+
+<div class="product-card">
+
+<img src="images/products/dried.jpg">
+
+<h3>
+Dried Mushroom
+</h3>
+
+<p>
+Long lasting mushroom products
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- REVIEWS -->
+
+
+<section class="reviews">
+
+
+<h2>
+Customer Reviews
+</h2>
+
+
+<div class="review-container">
+
+
+<div class="review-card">
+
+<p>
+"Very fresh mushrooms and excellent service."
+</p>
+
+<h4>
+- Customer
+</h4>
+
+</div>
+
+
+
+<div class="review-card">
+
+<p>
+"High quality products. Highly recommended."
+</p>
+
+<h4>
+- Customer
+</h4>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section class="contact">
+
+
+<h2>
+Contact Sooriya Mushrooms
+</h2>
+
+
+<p>
+Phone: +94 XX XXX XXXX
+</p>
+
+
+<p>
+Email: info@sooriyamushrooms.com
+</p>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Sooriya Mushrooms. All Rights Reserved.
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
