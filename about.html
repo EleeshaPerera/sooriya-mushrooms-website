@@ -8,22 +8,33 @@
             /* ==============================
                   ABOUT US SECTION
                ============================== */
-               navbar{
+               *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+              body{
+               
+               overflow-x:hidden;
+                font-family:Georgia, serif;
+}
+               .navbar{
 
-    padding:20px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
 
-    background :#332316;
+            padding:20px 50px;
+
+            background :#2f2218 !important;
 
 }
 
 
 .logo h2{
 
-    color:rgb(247, 229, 229);
+    color:rgb(255, 255, 255);
     margin:0;
 
 }
@@ -52,7 +63,7 @@
 
 .nav-links a:hover{
 
-    color:#021d03;
+    color:#c8e6c9;
 
 }
 
@@ -164,6 +175,145 @@
 
 }
 
+/* ==============================
+   OUR STATUS TODAY SECTION
+============================== */
+
+.status-section{
+
+    position:relative;
+
+    min-height:500px;
+
+    background-image:url("images/image3.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+     
+    width:100%;
+
+    margin:0;
+
+}
+
+
+/* Dark Transparent Overlay */
+
+.status-overlay{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.55);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+
+.status-subtitle{
+
+    color:#d8c3a5;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+
+.status-overlay h2{
+
+    color:white;
+
+    font-size:55px;
+
+    margin-bottom:25px;
+
+    font-family:Georgia, serif;
+
+}
+
+
+.status-text{
+
+    max-width:850px;
+
+    color:white;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+    .status-overlay h2{
+
+        font-size:38px;
+
+    }
+
+    .status-text{
+
+        font-size:16px;
+
+        line-height:1.8;
+
+    }
+
+}
+
+footer{
+
+
+    background:#3f311b !important;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+
+}
+
 
 
 /* ==============================
@@ -211,19 +361,97 @@
         text-align:justify;
 
     }
-    footer{
+   
 
+} 
+/* ==============================
+   GALLERY SECTION
+============================== */
 
-    background:#3f311b;
+.gallery-section{
 
-    color:white;
+    background:#ffffff;
+
+    padding:80px 10%;
+
+}
+
+.gallery-header{
 
     text-align:center;
 
-    padding:20px;
-
+    margin-bottom:50px;
 
 }
+
+.gallery-header h2{
+
+    font-size:45px;
+
+    color:#1d245c;
+
+    margin-bottom:15px;
+
+    font-family:Georgia, serif;
+
+}
+
+.gallery-header p{
+
+    color:#777;
+
+    font-size:18px;
+
+}
+
+.gallery-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.gallery-container img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+    transition:0.4s ease;
+
+}
+
+.gallery-container img:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .gallery-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-header h2{
+
+        font-size:35px;
+
+    }
 
 }
         </style>
@@ -268,6 +496,7 @@
 
 
 </nav>
+</header>
 
         <section class="about-banner">
             <h1>About Us</h1>
@@ -317,6 +546,54 @@
     </div>
 
         </section>
+        <!-- OUR STATUS TODAY SECTION -->
+
+<section class="status-section">
+
+    <div class="status-overlay">
+
+        <p class="status-subtitle">Dominating the Present</p>
+
+        <h2>Our Status Today</h2>
+
+        <p class="status-text">
+            Today, Sooriya Mushrooms proudly continues its journey as a
+            growing producer of fresh and high-quality mushrooms in Sri Lanka.
+            Through dedication, sustainable farming practices, and a commitment
+            to excellence, the company has built a reputation for providing
+            nutritious mushroom products while empowering women and supporting
+            local agriculture.
+        </p>
+
+    </div>
+
+</section>
+<!-- PHOTO GALLERY SECTION -->
+
+<section class="gallery-section">
+
+    <div class="gallery-header">
+        <h2>Our Mushroom Farm</h2>
+        <p>Explore our cultivation process and fresh mushroom production.</p>
+    </div>
+
+    <div class="gallery-container">
+
+        <img src="images/gallery1.jpg" alt="Mushroom Farm">
+
+        <img src="images/gallery2.jpg" alt="Mushroom Cultivation">
+
+        <img src="images/gallery3.jpg" alt="Fresh Mushrooms">
+
+        <img src="images/gallery4.jpg" alt="Harvest Process">
+
+        <img src="images/gallery5.jpg" alt="Packaging">
+
+        <img src="images/gallery6.jpg" alt="Sooriya Mushrooms">
+
+    </div>
+
+</section>
 
     <footer>
         <p>&copy; 2026 Sooriya Mushrooms. All Rights Reserved.</p>
