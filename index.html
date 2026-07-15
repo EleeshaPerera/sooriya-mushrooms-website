@@ -467,6 +467,94 @@ footer{
 
 
 }
+/* ================= WHY CHOOSE US PARALLAX ================= */
+
+.status-section{
+
+    position:relative;
+    min-height:500px;
+
+    background-image:url("images/image3.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    width:100%;
+    margin:0;
+}
+
+.status-overlay{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.55);
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.status-subtitle{
+
+    color:#d8c3a5;
+    font-size:18px;
+
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+    font-weight:600;
+}
+
+.status-overlay h2{
+
+    color:white;
+    font-size:55px;
+
+    margin-bottom:25px;
+
+    font-family:Georgia, serif;
+}
+
+.status-text{
+
+    max-width:850px;
+
+    color:white;
+    font-size:19px;
+
+    line-height:1.9;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .status-overlay h2{
+        font-size:35px;
+    }
+
+    .status-text{
+        font-size:16px;
+    }
+}
+
 
 
 
@@ -562,6 +650,7 @@ Explore Products
 
 
 
+
 <!-- INTRO -->
 
 
@@ -597,61 +686,38 @@ Sooriya Mushrooms — Fresh, Healthy, and Naturally Grown
 
 <!-- FEATURES -->
 
-<section class="features">
-
-
-<h2>
-Why Choose Us?
-</h2>
-
-
-
-<div class="feature-container">
-
-
-<div class="feature-card">
-
-<h3>Fresh Quality</h3>
-
-<p>
-Freshly harvested mushrooms with excellent taste.
-</p>
-
-</div>
-
-
-
-<div class="feature-card">
-
-<h3>Healthy Food</h3>
-
-<p>
-Rich in protein, vitamins and minerals.
-</p>
-
-</div>
-
-
-
-<div class="feature-card">
-
-<h3>Natural Farming</h3>
-
-<p>
-Safe and hygienic mushroom cultivation.
-</p>
-
-</div>
-
-
-</div>
 
 
 </section>
+<!-- WHY CHOOSE US PARALLAX SECTION -->
 
+<section class="status-section">
 
+    <div class="status-overlay">
+
+        <span class="status-subtitle">
+            WHY CHOOSE US
+        </span>
+
+        <h2>
+            Fresh & Naturally Grown Mushrooms
+        </h2>
+
+        <p class="status-text">
+
+            At Sooriya Mushrooms, we are committed to producing
+            fresh, healthy, and high-quality mushrooms using
+            modern cultivation techniques and hygienic farming
+            practices. Our mushrooms are rich in nutrients,
+            carefully harvested, and delivered with freshness
+            guaranteed to our valued customers.
+
+        </p>
+
+    </div>
 
 </section>
+
 
 
 
