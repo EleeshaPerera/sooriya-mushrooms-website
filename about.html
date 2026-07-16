@@ -1,51 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us -Sooriya Mushrooms</title>
-        <style>
-            /* ==============================
-                  ABOUT US SECTION
-               ============================== */
-               *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
 
-              body{
-               
-               overflow-x:hidden;
-                font-family:Georgia, serif;
-}
-               .navbar{
+<head>
 
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
+<meta charset="UTF-8">
 
-            padding:20px 50px;
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            background :#2f2218 !important;
+<title>About Us - Sooriya Mushrooms</title>
+
+
+<style>
+
+
+/* ================= GLOBAL ================= */
+
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
 
 }
+
+
+body{
+
+overflow-x:hidden;
+
+font-family:Georgia, serif;
+
+}
+
+
+
+/* ================= NAVBAR ================= */
+
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 50px;
+
+background:#2f2218 !important;
+
+position:relative;
+
+}
+
 
 
 .logo h2{
 
-    color:rgb(255, 255, 255);
-    margin:0;
+color:white;
+
+margin:0;
 
 }
 
 
 
+
+/* NAV LINKS */
+
+
 .nav-links{
 
-    display:flex;
-    list-style:none;
-    gap:25px;
+display:flex;
+
+list-style:none;
+
+gap:25px;
 
 }
 
@@ -53,9 +84,11 @@
 
 .nav-links a{
 
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
 
 }
 
@@ -63,90 +96,189 @@
 
 .nav-links a:hover{
 
-    color:#c8e6c9;
+color:#c8e6c9;
 
 }
+
+
+
+
+/* ================= HAMBURGER ================= */
+
+
+.menu-toggle{
+
+display:none;
+
+font-size:32px;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+
+
+
+/* ================= ABOUT BANNER ================= */
 
 
 .about-banner{
-            background:url("images/fresh-raw-oyster-mushrooms_198067-336769.jpg") center/cover;
-            height:400px;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            color:white;
-            text-align:center;
-        }
-         .about-banner h1{
-            font-size:55px;
-            background:rgba(0,0,0,0.5);
-            padding:15px 30px;
-            border-radius:10px;
-        }
-.about-section{
 
-    padding:80px 10%;
-    background:white;
+
+background:url("images/fresh-raw-oyster-mushrooms_198067-336769.jpg") center/cover;
+
+
+height:400px;
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+color:white;
+
+
+text-align:center;
+
 
 }
 
 
-/* Main Container */
+
+.about-banner h1{
+
+
+font-size:55px;
+
+
+background:rgba(0,0,0,0.5);
+
+
+padding:15px 30px;
+
+
+border-radius:10px;
+
+
+}
+
+
+
+
+/* ================= ABOUT SECTION ================= */
+
+
+.about-section{
+
+padding:80px 10%;
+
+background:white;
+
+}
+
+
 
 .about-container{
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:70px;
-    max-width:1200px;
-    margin:auto;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:70px;
+
+max-width:1200px;
+
+margin:auto;
+
 
 }
 
 
-/* ==============================
-   IMAGE PART
-============================== */
+
+/* IMAGE */
+
 
 .about-image{
 
-    flex:1;
-    text-align:left;
+flex:1;
+
+text-align:left;
 
 }
+
 
 
 .about-image img{
 
-    width:320px;
-    height:400px;
-    object-fit:cover;
-    border-radius:5px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+width:320px;
+
+
+height:400px;
+
+
+object-fit:cover;
+
+
+border-radius:5px;
+
+
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
 
 }
 
 
 
-/* ==============================
-   CONTENT PART
-============================== */
+.about-image img:hover{
+
+
+transform:scale(1.03);
+
+
+transition:0.4s ease;
+
+
+}
+
+
+
+
+/* CONTENT */
+
 
 .about-content{
 
-    flex:1;
+flex:1;
 
 }
+
 
 
 .about-content h1{
 
-    font-size:45px;
-    font-family:Georgia, serif;
-    color:#1d245c;
-    margin-bottom:30px;
-    font-weight:700;
+
+font-size:45px;
+
+
+color:#1d245c;
+
+
+margin-bottom:30px;
+
+
+font-weight:700;
+
 
 }
 
@@ -154,349 +286,578 @@
 
 .about-content p{
 
-    font-size:18px;
-    line-height:2;
-    color:#777;
-    margin-bottom:25px;
-    text-align:justify;
+
+font-size:18px;
+
+
+line-height:2;
+
+
+color:#777;
+
+
+margin-bottom:25px;
+
+
+text-align:justify;
+
 
 }
 
 
 
-/* ==============================
-   HOVER EFFECT IMAGE
-============================== */
+/* ================= STATUS SECTION ================= */
 
-.about-image img:hover{
-
-    transform:scale(1.03);
-    transition:0.4s ease;
-
-}
-
-/* ==============================
-   OUR STATUS TODAY SECTION
-============================== */
 
 .status-section{
 
-    position:relative;
 
-    min-height:500px;
+position:relative;
 
-    background-image:url("images/image3.jpg");
 
-    background-size:cover;
+min-height:500px;
 
-    background-position:center;
 
-    background-attachment:fixed;
+background-image:url("images/image3.jpg");
 
-    display:flex;
 
-    justify-content:center;
+background-size:cover;
 
-    align-items:center;
 
-    text-align:center;
-     
-    width:100%;
+background-position:center;
 
-    margin:0;
+
+background-attachment:fixed;
+
+
+display:flex;
+
+
+justify-content:center;
+
+
+align-items:center;
+
+
+text-align:center;
+
+
+width:100%;
+
 
 }
 
 
-/* Dark Transparent Overlay */
 
 .status-overlay{
 
-    position:absolute;
 
-    top:0;
+position:absolute;
 
-    left:0;
 
-    width:100%;
+top:0;
 
-    height:100%;
 
-    background:rgba(0,0,0,0.55);
+left:0;
 
-    display:flex;
 
-    flex-direction:column;
+width:100%;
 
-    justify-content:center;
 
-    align-items:center;
+height:100%;
 
-    padding:40px;
+
+background:rgba(0,0,0,0.55);
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+justify-content:center;
+
+
+align-items:center;
+
+
+padding:40px;
+
 
 }
+
 
 
 .status-subtitle{
 
-    color:#d8c3a5;
 
-    font-size:18px;
+color:#d8c3a5;
 
-    letter-spacing:2px;
 
-    text-transform:uppercase;
+font-size:18px;
 
-    margin-bottom:15px;
 
-    font-weight:600;
+letter-spacing:2px;
+
+
+text-transform:uppercase;
+
+
+margin-bottom:15px;
+
+
+font-weight:600;
+
 
 }
+
 
 
 .status-overlay h2{
 
-    color:white;
 
-    font-size:55px;
+color:white;
 
-    margin-bottom:25px;
 
-    font-family:Georgia, serif;
+font-size:55px;
+
+
+margin-bottom:25px;
+
 
 }
+
 
 
 .status-text{
 
-    max-width:850px;
 
-    color:white;
+max-width:850px;
 
-    font-size:19px;
 
-    line-height:1.9;
+color:white;
+
+
+font-size:19px;
+
+
+line-height:1.9;
+
+
+}
+
+
+
+/* ================= GALLERY ================= */
+
+
+.gallery-section{
+
+
+background:white;
+
+
+padding:80px 10%;
+
 
 }
 
 
-/* Mobile Responsive */
 
-@media(max-width:768px){
+.gallery-header{
 
-    .status-overlay h2{
 
-        font-size:38px;
+text-align:center;
 
-    }
 
-    .status-text{
+margin-bottom:50px;
 
-        font-size:16px;
-
-        line-height:1.8;
-
-    }
 
 }
+
+
+
+.gallery-header h2{
+
+
+font-size:45px;
+
+
+color:#1d245c;
+
+
+margin-bottom:15px;
+
+
+}
+
+
+
+.gallery-header p{
+
+
+color:#777;
+
+
+font-size:18px;
+
+
+}
+
+
+
+.gallery-container{
+
+
+display:grid;
+
+
+grid-template-columns:repeat(3,1fr);
+
+
+gap:25px;
+
+
+}
+
+
+
+.gallery-container img{
+
+
+width:100%;
+
+
+height:280px;
+
+
+object-fit:cover;
+
+
+border-radius:10px;
+
+
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+
+transition:0.4s ease;
+
+
+}
+
+
+
+.gallery-container img:hover{
+
+
+transform:scale(1.05);
+
+
+}
+
+
+
+/* ================= WHATSAPP ================= */
+
+
+.whatsapp-icon{
+
+
+position:fixed;
+
+
+bottom:25px;
+
+
+right:25px;
+
+
+width:65px;
+
+
+height:65px;
+
+
+background:#25D366;
+
+
+color:white;
+
+
+border-radius:50%;
+
+
+display:flex;
+
+
+justify-content:center;
+
+
+align-items:center;
+
+
+font-size:38px;
+
+
+text-decoration:none;
+
+
+z-index:9999;
+
+
+}
+
+
+
+
+/* ================= FOOTER ================= */
+
 
 footer{
 
 
-    background:#3f311b !important;
+background:#3f311b !important;
 
-    color:white;
 
-    text-align:center;
+color:white;
 
-    padding:20px;
+
+text-align:center;
+
+
+padding:20px;
 
 
 }
-.whatsapp-icon{
-
-    position:fixed;
-
-    bottom:25px;
-    right:25px;
-
-    width:65px;
-    height:65px;
-
-    background:#25D366;
-
-    color:white;
-
-    border-radius:50%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:38px;
-
-    text-decoration:none;
-
-    z-index:9999;
-
-    box-shadow:0 4px 15px rgba(0,0,0,0.3);
-
-}
-
-.whatsapp-icon:hover{
-
-    transform:scale(1.1);
-
-}
-
-
-
-/* ==============================
-   MOBILE RESPONSIVE
-============================== */
+/* ================= MOBILE RESPONSIVE ================= */
 
 
 @media(max-width:768px){
 
 
-    .about-section{
 
-        padding:50px 5%;
+.navbar{
 
-    }
-
-
-    .about-container{
-
-        flex-direction:column;
-        gap:40px;
-
-    }
-
-
-    .about-image img{
-
-        width:250px;
-        height:320px;
-
-    }
-
-
-    .about-content h1{
-
-        font-size:35px;
-        text-align:center;
-
-    }
-
-
-    .about-content p{
-
-        font-size:16px;
-        text-align:justify;
-
-    }
-   
-
-} 
-/* ==============================
-   GALLERY SECTION
-============================== */
-
-.gallery-section{
-
-    background:#ffffff;
-
-    padding:80px 10%;
+padding:20px 30px;
 
 }
 
-.gallery-header{
 
-    text-align:center;
 
-    margin-bottom:50px;
+.menu-toggle{
 
-}
-
-.gallery-header h2{
-
-    font-size:45px;
-
-    color:#1d245c;
-
-    margin-bottom:15px;
-
-    font-family:Georgia, serif;
+display:block;
 
 }
 
-.gallery-header p{
 
-    color:#777;
 
-    font-size:18px;
+/* MOBILE HAMBURGER MENU */
+
+
+.nav-links{
+
+
+position:absolute;
+
+
+top:75px;
+
+
+left:0;
+
+
+width:100%;
+
+
+background:#2f2218;
+
+
+display:none;
+
+
+flex-direction:column;
+
+
+align-items:center;
+
+
+gap:20px;
+
+
+padding:25px 0;
+
+
+z-index:999;
+
 
 }
+
+
+
+.nav-links.active{
+
+
+display:flex;
+
+
+}
+
+
+
+.nav-links li{
+
+
+width:100%;
+
+
+text-align:center;
+
+
+}
+
+
+
+.nav-links a{
+
+
+display:block;
+
+
+padding:10px;
+
+
+}
+
+
+
+
+
+.about-section{
+
+
+padding:50px 5%;
+
+
+}
+
+
+
+.about-container{
+
+
+flex-direction:column;
+
+
+gap:40px;
+
+
+}
+
+
+
+.about-image img{
+
+
+width:250px;
+
+
+height:320px;
+
+
+}
+
+
+
+.about-content h1{
+
+
+font-size:35px;
+
+
+text-align:center;
+
+
+}
+
+
+
+.about-content p{
+
+
+font-size:16px;
+
+
+}
+
+
+
+
+.status-overlay h2{
+
+
+font-size:38px;
+
+
+}
+
+
+
+.status-text{
+
+
+font-size:16px;
+
+
+line-height:1.8;
+
+
+}
+
+
 
 .gallery-container{
 
-    display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+grid-template-columns:1fr;
 
-    gap:25px;
-
-}
-
-.gallery-container img{
-
-    width:100%;
-
-    height:280px;
-
-    object-fit:cover;
-
-    border-radius:10px;
-
-    box-shadow:0 5px 20px rgba(0,0,0,0.15);
-
-    transition:0.4s ease;
-
-}
-
-.gallery-container img:hover{
-
-    transform:scale(1.05);
 
 }
 
 
-/* Mobile */
 
-@media(max-width:768px){
+.gallery-header h2{
 
-    .gallery-container{
 
-        grid-template-columns:1fr;
+font-size:35px;
 
-    }
-
-    .gallery-header h2{
-
-        font-size:35px;
-
-    }
 
 }
-        </style>
-        <link rel="stylesheet"
+
+
+}
+
+
+
+
+</style>
+
+
+<link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        
-    </head>
-    <body>
-        
-<!-- NAVIGATION -->
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- ================= NAVIGATION ================= -->
+
 
 <header>
 
@@ -504,144 +865,397 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <nav class="navbar">
 
 
+
 <div class="logo">
 
-<h2>Sooriya Mushrooms</h2>
+<h2>
+Sooriya Mushrooms
+</h2>
 
 </div>
 
 
 
-<ul class="nav-links">
+<!-- Hamburger Button -->
 
-<li><a href="#">Home</a></li>
+<div class="menu-toggle" onclick="toggleMenu()">
 
-<li><a href="#">About Us</a></li>
+<i class="fa-solid fa-bars"></i>
 
-<li><a href="#">Company Profile</a></li>
+</div>
 
-<li><a href="#">Products</a></li>
 
-<li><a href="#">Recipes</a></li>
 
-<li><a href="#">Nutrition & Tips</a></li>
 
-<li><a href="#">Contact Us</a></li>
+<ul class="nav-links" id="navLinks">
+
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+
+<li>
+<a href="about.html">
+About Us
+</a>
+</li>
+
+
+<li>
+<a href="profile.html">
+Company Profile
+</a>
+</li>
+
+
+<li>
+<a href="products.html">
+Products
+</a>
+</li>
+
+
+<li>
+<a href="nutrition.html">
+Nutrition & Tips
+</a>
+</li>
+
+
+<li>
+<a href="contact.html">
+Contact Us
+</a>
+</li>
+
 
 </ul>
 
 
 
 </nav>
+
+
 </header>
 
-        <section class="about-banner">
-            <h1>About Us</h1>
-
-        </section>
-        <section class="about-section">
-              <div class="about-container">
-
-        <!-- Left Side Image -->
-        <div class="about-image">
-
-            <img src="images\owner.jpeg" alt="Anusha Tharangani - Founder">
-
-        </div>
 
 
-        <!-- Right Side Content -->
-        <div class="about-content">
 
-            <h1>
-                Sooriya Mushrooms
-            </h1>
 
-            <p>
-                Established in 2022 by Mrs. Anusha Tharangani, 
-                Sooriya Mushrooms was founded with a vision of producing 
-                fresh, healthy, and high-quality mushroom products while 
-                creating opportunities for women empowerment.
-            </p>
+<!-- ================= ABOUT BANNER ================= -->
 
-            <p>
-                As a passionate entrepreneur, Mrs. Anusha Tharangani 
-                transformed her dedication into a women-led mushroom 
-                cultivation business. The company focuses on quality 
-                production, sustainable farming practices, and providing 
-                nutritious mushroom products to customers.
-            </p>
 
-            <p>
-                Sooriya Mushrooms continues to grow as a women empowerment 
-                initiative, supporting skill development and encouraging 
-                women's participation in agriculture and entrepreneurship.
-            </p>
+<section class="about-banner">
 
-        </div>
+<h1>
+About Us
+</h1>
 
-    </div>
+</section>
 
-        </section>
-        <!-- OUR STATUS TODAY SECTION -->
+
+
+
+
+<!-- ================= ABOUT CONTENT ================= -->
+
+
+<section class="about-section">
+
+
+<div class="about-container">
+
+
+
+<div class="about-image">
+
+
+<img src="images/owner.jpeg" 
+alt="Anusha Tharangani - Founder">
+
+
+</div>
+
+
+
+
+<div class="about-content">
+
+
+<h1>
+Sooriya Mushrooms
+</h1>
+
+
+
+<p>
+
+Established in 2022 by Mrs. Anusha Tharangani,
+Sooriya Mushrooms was founded with a vision of producing
+fresh, healthy, and high-quality mushroom products while
+creating opportunities for women empowerment.
+
+</p>
+
+
+
+<p>
+
+As a passionate entrepreneur, Mrs. Anusha Tharangani
+transformed her dedication into a women-led mushroom
+cultivation business. The company focuses on quality
+production, sustainable farming practices, and providing
+nutritious mushroom products to customers.
+
+</p>
+
+
+
+<p>
+
+Sooriya Mushrooms continues to grow as a women empowerment
+initiative, supporting skill development and encouraging
+women's participation in agriculture and entrepreneurship.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= STATUS ================= -->
+
 
 <section class="status-section">
 
-    <div class="status-overlay">
 
-        <p class="status-subtitle">Dominating the Present</p>
+<div class="status-overlay">
 
-        <h2>Our Status Today</h2>
 
-        <p class="status-text">
-            Today, Sooriya Mushrooms proudly continues its journey as a
-            growing producer of fresh and high-quality mushrooms in Sri Lanka.
-            Through dedication, sustainable farming practices, and a commitment
-            to excellence, the company has built a reputation for providing
-            nutritious mushroom products while empowering women and supporting
-            local agriculture.
-        </p>
+<p class="status-subtitle">
 
-    </div>
+Dominating the Present
+
+</p>
+
+
+
+<h2>
+
+Our Status Today
+
+</h2>
+
+
+
+
+<p class="status-text">
+
+
+Today, Sooriya Mushrooms proudly continues its journey as a
+growing producer of fresh and high-quality mushrooms in Sri Lanka.
+Through dedication, sustainable farming practices, and a commitment
+to excellence, the company has built a reputation for providing
+nutritious mushroom products while empowering women and supporting
+local agriculture.
+
+
+</p>
+
+
+
+</div>
+
 
 </section>
-<!-- PHOTO GALLERY SECTION -->
+
+
+
+
+
+
+
+<!-- ================= GALLERY ================= -->
+
 
 <section class="gallery-section">
 
-    <div class="gallery-header">
-        <h2>Our Mushroom Farm</h2>
-        <p>Explore our cultivation process and fresh mushroom production.</p>
-    </div>
 
-    <div class="gallery-container">
 
-        <img src="images\farm.jpeg" alt="Mushroom Farm">
+<div class="gallery-header">
 
-        <img src="images\cultivation.jpeg" alt="Mushroom Cultivation">
 
-        <img src="images\WhatsApp Image 2026-07-14 at 19.22.31.jpeg" alt="Fresh Mushrooms">
+<h2>
 
-        <img src="images\harvest.jpeg" alt="Harvest Process">
+Our Mushroom Farm
 
-        <img src="images\WhatsApp Image 2026-07-14 at 19.22.18.jpeg" alt="Packaging">
+</h2>
 
-        <img src="images\meeting.jpeg" alt="Sooriya Mushrooms">
 
-    </div>
+<p>
+
+Explore our cultivation process and fresh mushroom production.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="gallery-container">
+
+
+<img src="images/farm.jpeg" alt="Mushroom Farm">
+
+
+
+<img src="images/cultivation.jpeg" alt="Mushroom Cultivation">
+
+
+
+<img src="images/WhatsApp Image 2026-07-14 at 19.22.31.jpeg" 
+alt="Fresh Mushrooms">
+
+
+
+<img src="images/harvest.jpeg" 
+alt="Harvest Process">
+
+
+
+<img src="images/WhatsApp Image 2026-07-14 at 19.22.18.jpeg"
+alt="Packaging">
+
+
+
+<img src="images/meeting.jpeg"
+alt="Sooriya Mushrooms">
+
+<img src="images\meeting2.jpeg"
+alt="Sooriya Mushrooms">
+
+
+
+
+</div>
+
+
 
 </section>
-<a href="https://wa.me/94778268505"
-   class="whatsapp-icon"
-   target="_blank">
 
-   <i class="fa-brands fa-whatsapp"></i>
+
+
+
+
+
+
+
+<!-- ================= WHATSAPP ================= -->
+
+
+<a href="https://wa.me/94778268505"
+
+class="whatsapp-icon"
+
+target="_blank">
+
+
+<i class="fa-brands fa-whatsapp"></i>
+
 
 </a>
 
-    <footer>
-        <p>&copy; 2026 Sooriya Mushrooms. All Rights Reserved.</p>
-    </footer>
 
-    </body>
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer>
+
+
+<p>
+
+&copy; 2026 Sooriya Mushrooms. All Rights Reserved.
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+
+<script>
+
+
+function toggleMenu(){
+
+
+let menu = document.getElementById("navLinks");
+
+
+menu.classList.toggle("active");
+
+
+}
+
+
+
+
+// close menu after clicking a link
+
+
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+
+link.addEventListener("click",()=>{
+
+
+document.getElementById("navLinks")
+.classList.remove("active");
+
+
+});
+
+
+});
+
+
+
+</script>
+
+
+
+</body>
+
+
 </html>
+
+
+

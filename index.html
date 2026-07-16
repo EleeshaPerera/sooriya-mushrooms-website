@@ -4,37 +4,56 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sooriya Mushrooms | Fresh & Healthy Mushrooms</title>
+
+<title>
+Sooriya Mushrooms | Fresh & Healthy Mushrooms
+</title>
+
 
 
 <style>
 
+
 /* ================= GLOBAL ================= */
 
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
 }
+
+
 
 body{
 
-    font-family:Arial, sans-serif;
-    color:#333;
-    line-height:1.6;
+font-family:Arial, sans-serif;
+
+color:#333;
+
+line-height:1.6;
 
 }
+
 
 
 h2{
 
-    text-align:center;
-    color:#0d140d;
-    margin-bottom:30px;
+text-align:center;
+
+color:#0d140d;
+
+margin-bottom:30px;
 
 }
+
 
 
 /* ================= NAVBAR ================= */
@@ -42,31 +61,54 @@ h2{
 
 .navbar{
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
 
-    padding:20px 50px;
+display:flex;
 
-    background :#2f2218;
+
+justify-content:space-between;
+
+
+align-items:center;
+
+
+padding:20px 50px;
+
+
+background:#2f2218;
+
+
+position:relative;
+
 
 }
+
 
 
 .logo h2{
 
-    color:white;
-    margin:0;
+
+color:white;
+
+
+margin:0;
+
 
 }
+
 
 
 
 .nav-links{
 
-    display:flex;
-    list-style:none;
-    gap:25px;
+
+display:flex;
+
+
+list-style:none;
+
+
+gap:25px;
+
 
 }
 
@@ -74,9 +116,15 @@ h2{
 
 .nav-links a{
 
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
+
+color:white;
+
+
+text-decoration:none;
+
+
+font-weight:bold;
+
 
 }
 
@@ -84,9 +132,34 @@ h2{
 
 .nav-links a:hover{
 
-    color:#c8e6c9;
+
+color:#c8e6c9;
+
 
 }
+
+
+
+/* ================= HAMBURGER ================= */
+
+
+.menu-toggle{
+
+
+display:none;
+
+
+color:white;
+
+
+font-size:32px;
+
+
+cursor:pointer;
+
+
+}
+
 
 
 
@@ -96,31 +169,45 @@ h2{
 
 .hero{
 
-    height:600px;
 
-    background-image:
-
-    linear-gradient(
-    rgba(0,0,0,0.45),
-    rgba(0,0,0,0.45)
-    ),
-
-    url("images/OIP.webp");
+height:600px;
 
 
-    background-size:cover;
+background-image:
 
-    background-position:center;
 
-    display:flex;
+linear-gradient(
 
-    align-items:center;
+rgba(0,0,0,0.45),
 
-    justify-content:center;
+rgba(0,0,0,0.45)
 
-    text-align:center;
+),
 
-    color:#F4F0EA;
+
+url("images/OIP.webp");
+
+
+
+background-size:cover;
+
+
+background-position:center;
+
+
+display:flex;
+
+
+align-items:center;
+
+
+justify-content:center;
+
+
+text-align:center;
+
+
+color:#F4F0EA;
 
 
 }
@@ -129,7 +216,9 @@ h2{
 
 .hero h1{
 
-    font-size:55px;
+
+font-size:55px;
+
 
 }
 
@@ -137,9 +226,12 @@ h2{
 
 .hero p{
 
-    font-size:20px;
 
-    margin:20px;
+font-size:20px;
+
+
+margin:20px;
+
 
 }
 
@@ -147,15 +239,21 @@ h2{
 
 .btn{
 
-    background:#81c784;
 
-    padding:12px 30px;
+background:#81c784;
 
-    color:white;
 
-    text-decoration:none;
+padding:12px 30px;
 
-    border-radius:30px;
+
+color:white;
+
+
+text-decoration:none;
+
+
+border-radius:30px;
+
 
 }
 
@@ -168,9 +266,12 @@ h2{
 
 .intro{
 
-    padding:70px 100px;
 
-    text-align:center;
+padding:70px 100px;
+
+
+text-align:center;
+
 
 }
 
@@ -178,56 +279,167 @@ h2{
 
 .intro p{
 
-    font-size:18px;
-    font-family:Georgia, serif;
-     color:#777;
 
-}
+font-size:18px;
 
 
+font-family:Georgia,serif;
 
 
-/* ================= FEATURES ================= */
-
-
-.features{
-
-    background:#f2e2c7;
-
-    padding:60px;
+color:#777;
 
 
 }
 
 
 
-.feature-container{
 
-    display:flex;
 
-    justify-content:center;
 
-    gap:30px;
+/* ================= WHY CHOOSE US PARALLAX ================= */
+
+
+.status-section{
+
+
+position:relative;
+
+
+min-height:500px;
+
+
+background-image:url("images/image3.jpg");
+
+
+background-size:cover;
+
+
+background-position:center;
+
+
+background-attachment:fixed;
+
+
+display:flex;
+
+
+justify-content:center;
+
+
+align-items:center;
+
+
+text-align:center;
+
+
+width:100%;
+
 
 }
 
 
 
-.feature-card{
+.status-overlay{
 
-    background:white;
 
-    width:300px;
+position:absolute;
 
-    padding:30px;
 
-    text-align:center;
+top:0;
 
-    border-radius:15px;
 
-    box-shadow:0 5px 15px #56350b;
+left:0;
+
+
+width:100%;
+
+
+height:100%;
+
+
+background:rgba(0,0,0,0.55);
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+justify-content:center;
+
+
+align-items:center;
+
+
+padding:40px;
+
 
 }
+
+
+
+.status-subtitle{
+
+
+color:#d8c3a5;
+
+
+font-size:18px;
+
+
+letter-spacing:2px;
+
+
+text-transform:uppercase;
+
+
+margin-bottom:15px;
+
+
+font-weight:600;
+
+
+}
+
+
+
+.status-overlay h2{
+
+
+color:white;
+
+
+font-size:55px;
+
+
+margin-bottom:25px;
+
+
+font-family:Georgia,serif;
+
+
+}
+
+
+
+.status-text{
+
+
+max-width:850px;
+
+
+color:white;
+
+
+font-size:19px;
+
+
+line-height:1.9;
+
+
+}
+
 
 
 
@@ -238,7 +450,9 @@ h2{
 
 .products{
 
-    padding:70px;
+
+padding:70px;
+
 
 }
 
@@ -246,11 +460,15 @@ h2{
 
 .product-container{
 
-    display:flex;
 
-    justify-content:center;
+display:flex;
 
-    gap:30px;
+
+justify-content:center;
+
+
+gap:30px;
+
 
 }
 
@@ -258,15 +476,21 @@ h2{
 
 .product-card{
 
-    width:300px;
 
-    text-align:center;
+width:300px;
 
-    box-shadow:0 5px 15px #ccc;
 
-    border-radius:15px;
+text-align:center;
 
-    overflow:hidden;
+
+box-shadow:0 5px 15px #ccc;
+
+
+border-radius:15px;
+
+
+overflow:hidden;
+
 
 }
 
@@ -274,11 +498,15 @@ h2{
 
 .product-card img{
 
-    width:100%;
 
-    height:220px;
+width:100%;
 
-    object-fit:cover;
+
+height:220px;
+
+
+object-fit:cover;
+
 
 }
 
@@ -286,11 +514,16 @@ h2{
 
 .product-card h3{
 
-    color:#2e7d32;
 
-    margin:15px;
+color:#2e7d32;
+
+
+margin:15px;
+
 
 }
+
+
 
 
 
@@ -300,20 +533,28 @@ h2{
 
 .reviews{
 
-    background:#e6dcd4;
 
-    padding:60px;
+background:#e6dcd4;
+
+
+padding:60px;
+
 
 }
 
 
+
 .review-container{
 
-    display:flex;
 
-    justify-content:center;
+display:flex;
 
-    gap:30px;
+
+justify-content:center;
+
+
+gap:30px;
+
 
 }
 
@@ -321,110 +562,220 @@ h2{
 
 .review-card{
 
-    width:350px;
 
-    background:white;
+width:350px;
 
-    padding:30px;
 
-    border-radius:15px;
+background:white;
 
-    box-shadow:0 5px 15px #ddd;
 
-    text-align:center;
+padding:30px;
+
+
+border-radius:15px;
+
+
+box-shadow:0 5px 15px #ddd;
+
+
+text-align:center;
+
 
 }
-
 
 
 
 
 /* ================= CONTACT ================= */
 
+
 .contact{
 
-    background:#4f3720;
-    color:white;
 
-    padding:70px 10%;
+background:#4f3720;
+
+
+color:white;
+
+
+padding:70px 10%;
+
+
 }
+
+
 
 .contact-container{
 
-    display:flex;
 
-    justify-content:space-between;
+display:flex;
 
-    align-items:center;
 
-    gap:80px;
+justify-content:space-between;
+
+
+align-items:center;
+
+
+gap:80px;
+
+
 }
+
+
 
 .contact-logo{
 
-    flex:1;
 
-    text-align:center;
+flex:1;
+
+
+text-align:center;
+
+
 }
+
+
 
 .contact-logo img{
 
-    width:220px;
 
-    max-width:100%;
+width:220px;
+
+
+max-width:100%;
+
+
 }
+
+
 
 .contact-details{
 
-    flex:2;
+
+flex:2;
+
+
 }
+
+
 
 .contact-details h2{
 
-    color:white;
 
-    text-align:left;
+color:white;
 
-    margin-bottom:20px;
+
+text-align:left;
+
+
 }
+
+
 
 .contact-details p{
 
-    font-size:18px;
 
-    margin-bottom:10px;
+font-size:18px;
+
+
+margin-bottom:10px;
+
+
 }
+
+
 
 .map-link{
 
-    color:white;
-    text-decoration:none;
-    transition:0.3s;
+
+color:white;
+
+
+text-decoration:none;
+
 
 }
+
+
 
 .map-link:hover{
 
-    color:#81c784;
-    text-decoration:underline;
+
+color:#81c784;
+
+
+text-decoration:underline;
+
 
 }
-/* Mobile */
 
-@media(max-width:768px){
 
-    .contact-container{
 
-        flex-direction:column;
 
-        text-align:center;
-    }
 
-    .contact-details h2{
+/* ================= WHATSAPP ================= */
 
-        text-align:center;
-    }
+
+.whatsapp-icon{
+
+
+position:fixed;
+
+
+bottom:25px;
+
+
+right:25px;
+
+
+width:65px;
+
+
+height:65px;
+
+
+background:#25D366;
+
+
+color:white;
+
+
+border-radius:50%;
+
+
+display:flex;
+
+
+justify-content:center;
+
+
+align-items:center;
+
+
+font-size:38px;
+
+
+text-decoration:none;
+
+
+z-index:9999;
+
+
 }
+
+
+
+.whatsapp-icon:hover{
+
+
+transform:scale(1.1);
+
+
+}
+
+
+
 
 
 
@@ -433,244 +784,239 @@ h2{
 
 footer{
 
-    background:#34280f;
 
-    color:white;
+background:#34280f;
 
-    padding:20px;
 
-    text-align:center;
+color:white;
+
+
+padding:20px;
+
+
+text-align:center;
+
 
 }
-/* ================= WHY CHOOSE US PARALLAX ================= */
-
-.status-section{
-
-    position:relative;
-    min-height:500px;
-
-    background-image:url("images/image3.jpg");
-
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-
-    width:100%;
-    margin:0;
-}
-
-.status-overlay{
-
-    position:absolute;
-
-    top:0;
-    left:0;
-
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,0.55);
-
-    display:flex;
-    flex-direction:column;
-
-    justify-content:center;
-    align-items:center;
-
-    padding:40px;
-}
-
-.status-subtitle{
-
-    color:#d8c3a5;
-    font-size:18px;
-
-    letter-spacing:2px;
-    text-transform:uppercase;
-
-    margin-bottom:15px;
-    font-weight:600;
-}
-
-.status-overlay h2{
-
-    color:white;
-    font-size:55px;
-
-    margin-bottom:25px;
-
-    font-family:Georgia, serif;
-}
-
-.status-text{
-
-    max-width:850px;
-
-    color:white;
-    font-size:19px;
-
-    line-height:1.9;
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-    .status-overlay h2{
-        font-size:35px;
-    }
-
-    .status-text{
-        font-size:16px;
-    }
-}
-.whatsapp-icon{
-
-    position:fixed;
-
-    bottom:25px;
-    right:25px;
-
-    width:65px;
-    height:65px;
-
-    background:#25D366;
-
-    color:white;
-
-    border-radius:50%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:38px;
-
-    text-decoration:none;
-
-    z-index:9999;
-
-    box-shadow:0 4px 15px rgba(0,0,0,0.3);
-
-}
-
-.whatsapp-icon:hover{
-
-    transform:scale(1.1);
-
-}
-
-
-
-
-
-
-/* ================= MOBILE ================= */
+ 
+/* ================= MOBILE RESPONSIVE ================= */
 
 
 @media(max-width:900px){
 
 
+
 .navbar{
 
-    flex-direction:column;
+
+padding:20px 30px;
+
 
 }
+
+
+
+.menu-toggle{
+
+
+display:block;
+
+
+}
+
 
 
 .nav-links{
 
-    flex-direction:column;
 
-    margin-top:20px;
+position:absolute;
+
+
+top:75px;
+
+
+left:0;
+
+
+width:100%;
+
+
+background:#2f2218;
+
+
+display:none;
+
+
+flex-direction:column;
+
+
+align-items:center;
+
+
+gap:20px;
+
+
+padding:25px 0;
+
+
+z-index:999;
+
 
 }
 
 
-.feature-container,
-.product-container,
-.review-container{
 
-    flex-direction:column;
+.nav-links.active{
 
-    align-items:center;
+
+display:flex;
+
 
 }
+
+
+
+.nav-links li{
+
+
+width:100%;
+
+
+text-align:center;
+
+
+}
+
+
+
+.nav-links a{
+
+
+display:block;
+
+
+padding:10px;
+
+
+}
+
 
 
 .hero h1{
 
-    font-size:35px;
 
-}
-
-footer{
-
-
-    background:#3f311b;
-
-    color:white;
-
-    text-align:center;
-
-    padding:20px;
-
-
-}
-.contact{
-
-
-    padding:70px;
-
-    background:#563904;
-
-    color:white;
-
-    text-align:center;
+font-size:35px;
 
 
 }
 
 
 
-.contact h2{
+.intro{
 
 
-    color:white;
-
-
-}
-
-
-
-.contact p{
-
-
-    font-size:18px;
-
-    margin:10px;
+padding:50px 30px;
 
 
 }
 
 
 
+.product-container,
+
+
+.review-container{
+
+
+flex-direction:column;
+
+
+align-items:center;
+
 
 }
+
+
+
+.status-overlay h2{
+
+
+font-size:35px;
+
+
+}
+
+
+
+.status-text{
+
+
+font-size:16px;
+
+
+}
+
+
+
+.contact-container{
+
+
+flex-direction:column;
+
+
+text-align:center;
+
+
+}
+
+
+
+.contact-details h2{
+
+
+text-align:center;
+
+
+}
+
+
+
+.products{
+
+
+padding:50px 20px;
+
+
+}
+
+
+
+.reviews{
+
+
+padding:40px 20px;
+
+
+}
+
+
+
+}
+
+
 
 </style>
 
+
+
+
 <link rel="stylesheet"
+
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
 
 
 </head>
+
 
 
 
@@ -678,7 +1024,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 
 
-<!-- NAVIGATION -->
+
+
+
+<!-- ================= NAVBAR ================= -->
+
 
 <header>
 
@@ -686,31 +1036,118 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <nav class="navbar">
 
 
+
 <div class="logo">
 
-<h2>Sooriya Mushrooms</h2>
+
+<h2>
+
+Sooriya Mushrooms
+
+</h2>
+
 
 </div>
 
 
 
-<ul class="nav-links">
 
-<li><a href="#">Home</a></li>
 
-<li><a href="#">About Us</a></li>
+<!-- Hamburger Icon -->
 
-<li><a href="#">Company Profile</a></li>
 
-<li><a href="#">Products</a></li>
+<div class="menu-toggle" onclick="toggleMenu()">
 
-<li><a href="#">Recipes</a></li>
 
-<li><a href="#">Nutrition & Tips</a></li>
+<i class="fa-solid fa-bars"></i>
 
-<li><a href="#">Contact Us</a></li>
+
+</div>
+
+
+
+
+
+
+
+<ul class="nav-links" id="navLinks">
+
+
+
+<li>
+
+<a href="index.html">
+
+Home
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="about.html">
+
+About Us
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="profile.html">
+
+Company Profile
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="products.html">
+
+Products
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="nutrition.html">
+
+Nutrition & Tips
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="contact.html">
+
+Contact Us
+
+</a>
+
+</li>
+
+
 
 </ul>
+
 
 
 
@@ -723,31 +1160,48 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 
 
-<!-- HERO -->
+
+
+
+<!-- ================= HERO ================= -->
+
 
 <section class="hero">
+
 
 
 <div>
 
 
+
 <h1>
+
 Fresh, Natural & Healthy Mushrooms
+
 </h1>
 
 
+
+
 <p>
+
 Premium quality mushrooms cultivated with care by Sooriya Mushrooms.
+
 </p>
 
 
 
-<a href="#" class="btn">
+
+<a href="products.html" class="btn">
+
 Explore Products
+
 </a>
 
 
+
 </div>
+
 
 
 </section>
@@ -757,70 +1211,105 @@ Explore Products
 
 
 
-<!-- INTRO -->
+
+
+
+<!-- ================= INTRO ================= -->
 
 
 <section class="intro">
 
 
+
 <h2>
+
 Welcome to Sooriya Mushrooms
+
 </h2>
+
+
+
 
 
 <p>
 
 
-<B>Sooriya Mushrooms</B> is dedicated to providing fresh,
- high-quality, and nutritious mushrooms cultivated with 
- care and modern farming methods.We focus on delivering 
- healthy, natural, and delicious mushroom products while
-  maintaining the highest standards of quality and hygiene.
+<b>Sooriya Mushrooms</b> is dedicated to providing fresh,
+high-quality, and nutritious mushrooms cultivated with care
+and modern farming methods. We focus on delivering healthy,
+natural, and delicious mushroom products while maintaining
+the highest standards of quality and hygiene.
+
+
+
+<br><br>
+
 
 Sooriya Mushrooms — Fresh, Healthy, and Naturally Grown
+
 
 
 </p>
 
 
-</section>
-
-
-
-
-
-
-<!-- FEATURES -->
-
-
 
 </section>
-<!-- WHY CHOOSE US PARALLAX SECTION -->
+
+
+
+
+
+
+
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+
 
 <section class="status-section">
 
-    <div class="status-overlay">
 
-        <span class="status-subtitle">
-            WHY CHOOSE US
-        </span>
+<div class="status-overlay">
 
-        <h2>
-            Fresh & Naturally Grown Mushrooms
-        </h2>
 
-        <p class="status-text">
+<span class="status-subtitle">
 
-            At Sooriya Mushrooms, we are committed to producing
-            fresh, healthy, and high-quality mushrooms using
-            modern cultivation techniques and hygienic farming
-            practices. Our mushrooms are rich in nutrients,
-            carefully harvested, and delivered with freshness
-            guaranteed to our valued customers.
+WHY CHOOSE US
 
-        </p>
+</span>
 
-    </div>
+
+
+
+<h2>
+
+Fresh & Naturally Grown Mushrooms
+
+</h2>
+
+
+
+
+
+<p class="status-text">
+
+
+At Sooriya Mushrooms, we are committed to producing
+fresh, healthy, and high-quality mushrooms using
+modern cultivation techniques and hygienic farming
+practices. Our mushrooms are rich in nutrients,
+carefully harvested, and delivered with freshness
+guaranteed to our valued customers.
+
+
+
+</p>
+
+
+
+</div>
+
 
 </section>
 
@@ -829,50 +1318,93 @@ Sooriya Mushrooms — Fresh, Healthy, and Naturally Grown
 
 
 
-<!-- PRODUCTS -->
+
+
+
+
+<!-- ================= PRODUCTS ================= -->
 
 
 <section class="products">
 
 
+
 <h2>
+
 Best Selling Products
+
 </h2>
+
+
+
 
 
 <div class="product-container">
 
 
+
+
+
 <div class="product-card">
 
-<img src="images\WhatsApp Image 2026-07-14 at 19.22.18.jpeg">
+
+
+<img src="images/WhatsApp Image 2026-07-14 at 19.22.18.jpeg">
+
+
 
 <h3>
+
 Oyster Mushroom
+
 </h3>
 
+
+
 <p>
+
 Fresh oyster mushrooms
+
 </p>
+
+
 
 </div>
 
 
 
 
+
+
+
 <div class="product-card">
 
-<img src="images\pots.jpeg">
+
+
+<img src="images/pots.jpeg">
+
+
 
 <h3>
+
 Mushroom Substrate Bag
+
 </h3>
 
+
+
+
 <p>
+
 Nutrient-rich growing block filled with sterilized sawdust and spawn.
+
 </p>
 
+
+
 </div>
+
+
 
 
 
@@ -880,72 +1412,116 @@ Nutrient-rich growing block filled with sterilized sawdust and spawn.
 
 <div class="product-card">
 
-<img src="images\dried mushroom.jpg">
+
+
+<img src="images/dried mushroom.jpg">
+
+
 
 <h3>
+
 Dried Mushroom
+
 </h3>
 
+
+
+
 <p>
+
 Long lasting mushroom products
+
 </p>
 
+
+
 </div>
 
 
 
+
+
+
+
 </div>
+
 
 
 </section>
 
-
-
-
-
-
-<!-- REVIEWS -->
+<!-- ================= REVIEWS ================= -->
 
 
 <section class="reviews">
 
 
 <h2>
+
 Customer Reviews
+
 </h2>
+
+
 
 
 <div class="review-container">
 
 
+
 <div class="review-card">
 
+
 <p>
+
 "Very fresh mushrooms and excellent service."
+
 </p>
 
+
+
 <h4>
+
 - Customer
+
 </h4>
 
+
+
 </div>
+
+
+
+
 
 
 
 <div class="review-card">
 
+
 <p>
+
 "High quality products. Highly recommended."
+
 </p>
 
+
+
 <h4>
--Customer
+
+- Customer
+
 </h4>
 
-</div>
 
 
 </div>
+
+
+
+
+
+</div>
+
 
 
 </section>
@@ -955,51 +1531,131 @@ Customer Reviews
 
 
 
-<!-- CONTACT -->
+
+
+
+<!-- ================= CONTACT ================= -->
 
 
 <section class="contact">
 
-    <div class="contact-container">
 
-        <!-- Left Side Logo -->
 
-        <div class="contact-logo">
+<div class="contact-container">
 
-            <img src="images\logo.jpeg" alt="Sooriya Mushrooms Logo">
 
-        </div>
 
-        <!-- Right Side Contact Details -->
+<!-- LOGO -->
 
-        <div class="contact-details">
 
-            <h2>Contact Sooriya Mushrooms</h2>
+<div class="contact-logo">
 
-            <p>📞 Phone: +94 778268505</p>
 
-            <p>✉ Email: tharanganianusha4@gmail.com</p>
 
-            <p>📍 
-    
-    <a href="https://maps.app.goo.gl/1i871v3cFmGdR5rP7"
-       target="_blank"
-       class="map-link">
-       Sooriya Villa, Kondagolla, Katugaha, Pattiya Gedara,
-       Bandarawela 90138, Sri Lanka
-    </a>
+<img src="images/logo.jpeg" 
+alt="Sooriya Mushrooms Logo">
+
+
+
+</div>
+
+
+
+
+
+
+<!-- CONTACT DETAILS -->
+
+
+<div class="contact-details">
+
+
+
+<h2>
+
+Contact Sooriya Mushrooms
+
+</h2>
+
+
+
+
+<p>
+
+📞 Phone: +94 778268505
+
 </p>
 
-        </div>
 
-    </div>
+
+
+
+<p>
+
+✉ Email: tharanganianusha4@gmail.com
+
+</p>
+
+
+
+
+
+
+<p>
+
+📍
+
+<a href="https://maps.app.goo.gl/1i871v3cFmGdR5rP7"
+
+target="_blank"
+
+class="map-link">
+
+
+Sooriya Villa, Kondagolla, Katugaha,
+Pattiya Gedara, Bandarawela 90138,
+Sri Lanka
+
+
+</a>
+
+
+</p>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
 
 </section>
-<a href="https://wa.me/94778268505"
-   class="whatsapp-icon"
-   target="_blank">
 
-   <i class="fa-brands fa-whatsapp"></i>
+
+
+
+
+
+
+
+<!-- ================= WHATSAPP BUTTON ================= -->
+
+
+<a href="https://wa.me/94778268505"
+
+class="whatsapp-icon"
+
+target="_blank">
+
+
+<i class="fa-brands fa-whatsapp"></i>
+
 
 </a>
 
@@ -1008,16 +1664,85 @@ Customer Reviews
 
 
 
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
 <footer>
 
+
 <p>
+
+
 © 2026 Sooriya Mushrooms. All Rights Reserved.
+
+
 </p>
+
 
 </footer>
 
 
 
+
+
+
+
+
+
+
+<!-- ================= HAMBURGER JAVASCRIPT ================= -->
+
+
+<script>
+
+
+function toggleMenu(){
+
+
+let menu = document.getElementById("navLinks");
+
+
+menu.classList.toggle("active");
+
+
+}
+
+
+
+
+
+// Close menu after clicking a link
+
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+
+link.addEventListener("click",()=>{
+
+
+document.getElementById("navLinks")
+
+.classList.remove("active");
+
+
+});
+
+
+});
+
+
+
+</script>
+
+
+
+
+
+
 </body>
+
 
 </html>

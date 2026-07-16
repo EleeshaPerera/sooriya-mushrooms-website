@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nutrition & Tips | Sooriya Mushrooms</title>
+
+
+<style>
+
+
+/* ================= GLOBAL ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+
+body{
+background:#f9f6f1;
+color:#333;
+line-height:1.7;
+}
+
+
+/* ================= NAVBAR ================= */
+
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 50px;
+
+background:#2f2218;
+
+}
+
+
+.logo h2{
+color:white;
+}
+
+
+/* NAV LINKS */
+
+.nav-links{
+
+display:flex;
+list-style:none;
+gap:25px;
+
+}
+
+
+.nav-links a{
+
+color:white;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
+.nav-links a:hover{
+
+color:#81c784;
+
+}
+
+
+/* HAMBURGER */
+
+
+.menu-toggle{
+
+display:none;
+
+font-size:30px;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+
+
+
+/* ================= HERO ================= */
+
+
+.hero{
+
+height:400px;
+
+
+background-image:
+
+linear-gradient(
+rgba(0,0,0,0.55),
+rgba(0,0,0,0.55)
+),
+
+url("images/Mushrooms-1.jpg");
+
+
+background-size:cover;
+
+background-position:center;
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+
+text-align:center;
+
+color:white;
+
+}
+
+
+
+.hero-content h1{
+
+font-size:55px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.hero-content p{
+
+font-size:20px;
+
+}
+
+
+
+/* ================= PARALLAX SECTION ================= */
+
+
+.nutrition-container{
+
+padding:80px 10%;
+
+display:flex;
+
+flex-direction:column;
+
+gap:50px;
+
+}
+
+
+
+/* PARALLAX BOX */
+
+
+.parallax-box{
+
+height:450px;
+
+border-radius:20px;
+
+overflow:hidden;
+
+background-size:cover;
+
+background-position:center;
+
+background-attachment:fixed;
+
+position:relative;
+
+
+box-shadow:
+0 8px 25px rgba(0,0,0,0.25);
+
+}
+
+
+
+/* IMAGES */
+
+
+.nutrition-box{
+
+background-image:url("images/image2.jpg");
+
+}
+
+
+
+.benefits-box{
+
+background-image:url("images/image3.jpg");
+
+}
+
+
+
+.tips-box{
+
+background-image:url("images/image4.webp");
+
+}
+
+
+
+
+/* OVERLAY */
+
+
+.box-overlay{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+
+background:rgba(0,0,0,0.55);
+
+
+padding:50px;
+
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+
+color:white;
+
+}
+
+
+
+.box-overlay h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.box-overlay p{
+
+font-size:18px;
+
+max-width:750px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.box-overlay ul{
+
+padding-left:25px;
+
+}
+
+
+
+.box-overlay li{
+
+font-size:17px;
+
+margin-bottom:10px;
+
+}
+
+
+
+/* CONTACT */
+
+
+.contact-banner{
+
+background:#4f3720;
+
+color:white;
+
+text-align:center;
+
+padding:60px 20px;
+
+}
+
+
+
+.contact-banner h2{
+
+margin-bottom:15px;
+
+}
+
+
+
+.contact-banner p{
+
+font-size:18px;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#34280f;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:768px){
+
+
+
+.navbar{
+
+padding:20px 30px;
+
+}
+
+
+
+.menu-toggle{
+
+display:block;
+
+}
+
+
+
+/* MOBILE MENU */
+
+
+.nav-links{
+
+
+position:absolute;
+
+top:75px;
+
+left:0;
+
+width:100%;
+
+
+background:#2f2218;
+
+
+display:none;
+
+
+flex-direction:column;
+
+
+text-align:center;
+
+
+padding:20px 0;
+
+
+gap:20px;
+
+
+}
+
+
+.nav-links.active{
+
+display:flex;
+
+}
+
+
+
+
+.hero-content h1{
+
+font-size:35px;
+
+}
+
+
+
+.hero-content p{
+
+font-size:16px;
+
+}
+
+
+
+
+.parallax-box{
+
+height:auto;
+
+min-height:500px;
+
+background-attachment:scroll;
+
+}
+
+
+
+.box-overlay{
+
+padding:30px;
+
+}
+
+
+
+.box-overlay h2{
+
+font-size:30px;
+
+}
+
+
+
+.box-overlay p,
+.box-overlay li{
+
+font-size:16px;
+
+}
+
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+
+<header>
+
+
+<nav class="navbar">
+
+
+<div class="logo">
+
+<h2>
+Sooriya Mushrooms
+</h2>
+
+</div>
+
+
+
+<!-- Hamburger Button -->
+
+<div class="menu-toggle" onclick="toggleMenu()">
+
+☰
+
+</div>
+
+
+
+
+<ul class="nav-links" id="navLinks">
+
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+
+<li>
+<a href="about.html">About Us</a>
+</li>
+
+
+<li>
+<a href="products.html">Products</a>
+</li>
+
+
+<li>
+<a href="nutrition.html">
+Nutrition & Tips
+</a>
+</li>
+
+
+<li>
+<a href="contact.html">
+Contact Us
+</a>
+</li>
+
+
+</ul>
+
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+<!-- HERO -->
+
+
+<section class="hero">
+
+
+<div class="hero-content">
+
+
+<h1>
+Nutrition & Tips
+</h1>
+
+
+<p>
+Discover the health benefits of fresh mushrooms and learn how to enjoy them daily.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- PARALLAX BOXES -->
+
+
+<section class="nutrition-container">
+
+
+
+<div class="parallax-box nutrition-box">
+
+
+<div class="box-overlay">
+
+
+<h2>
+Mushroom Nutrition
+</h2>
+
+
+<p>
+
+Mushrooms are a low-calorie, nutrient-rich food that provides essential vitamins and minerals for a healthy lifestyle.
+
+</p>
+
+
+
+<ul>
+
+<li>Low calories</li>
+
+<li>Natural plant-based protein</li>
+
+<li>High dietary fiber</li>
+
+<li>Vitamin B Complex</li>
+
+<li>Vitamin D</li>
+
+<li>Potassium, Iron and Copper</li>
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="parallax-box benefits-box">
+
+
+<div class="box-overlay">
+
+
+<h2>
+Health Benefits
+</h2>
+
+
+<ul>
+
+<li>Supports immune system</li>
+
+<li>Rich in antioxidants</li>
+
+<li>Helps maintain healthy bones</li>
+
+<li>Supports brain health</li>
+
+<li>Improves digestive health</li>
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="parallax-box tips-box">
+
+
+<div class="box-overlay">
+
+
+<h2>
+Healthy Consumption Tips
+</h2>
+
+
+<ul>
+
+<li>Store mushrooms in refrigerator</li>
+
+<li>Clean before cooking</li>
+
+<li>Avoid overcooking to preserve nutrients</li>
+
+<li>Add to soups, salads and curries</li>
+
+<li>Use as a healthy meat alternative</li>
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<section class="contact-banner">
+
+
+<h2>
+Eat Healthy, Live Better
+</h2>
+
+
+<p>
+
+Enjoy the natural goodness of fresh mushrooms from Sooriya Mushrooms.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Sooriya Mushrooms. All Rights Reserved.
+</p>
+
+</footer>
+
+
+
+
+
+
+<script>
+
+
+function toggleMenu(){
+
+let menu = document.getElementById("navLinks");
+
+menu.classList.toggle("active");
+
+}
+
+
+
+// Close menu after clicking link
+
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+document.getElementById("navLinks").classList.remove("active");
+
+});
+
+});
+
+
+</script>
+
+
+
+</body>
+
+</html>
