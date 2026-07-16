@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <META name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Products| Sooriya Mushrooms</title>
+
+            <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+font-family:Arial,sans-serif;
+background:#f9f6f1;
+color:#333;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:#2f2218;
+}
+
+.logo h2{
+color:white;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.nav-links a:hover{
+color:#81c784;
+}
+/* ================= HAMBURGER ================= */
+
+.menu-toggle{
+    display:none;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
+}
+
+/* ================= HERO ================= */
+
+.products-banner{
+
+height:350px;
+
+background:
+linear-gradient(rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)),
+url("images/image3.jpg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+}
+
+.products-banner h1{
+font-size:55px;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products-section{
+
+padding:80px 10%;
+}
+
+.products-title{
+
+text-align:center;
+margin-bottom:50px;
+}
+
+.products-title h2{
+
+font-size:40px;
+color:#2f2218;
+}
+
+.product-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+}
+
+.product-card{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+transition:0.4s;
+}
+
+.product-card:hover{
+
+transform:translateY(-8px);
+}
+
+.product-card img{
+
+width:100%;
+height:250px;
+
+object-fit:cover;
+}
+
+.product-info{
+
+padding:20px;
+text-align:center;
+}
+
+.product-info h3{
+
+color:#2e7d32;
+margin-bottom:10px;
+}
+
+.product-info p{
+
+margin-bottom:15px;
+color:#666;
+}
+
+.product-btn{
+
+display:inline-block;
+
+background:#81c784;
+
+color:white;
+
+padding:10px 25px;
+
+border-radius:25px;
+
+text-decoration:none;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp-icon{
+
+position:fixed;
+
+bottom:25px;
+right:25px;
+
+width:65px;
+height:65px;
+
+background:#25D366;
+
+color:white;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:38px;
+
+text-decoration:none;
+
+z-index:999;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+background:#34280f;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.navbar{
+    padding:20px 30px;
+    position:relative;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+.nav-links{
+    position:absolute;
+    top:75px;
+    left:0;
+    width:100%;
+    background:#2f2218;
+
+    display:none;
+    flex-direction:column;
+    align-items:center;
+
+    gap:20px;
+    padding:25px 0;
+
+    z-index:999;
+}
+
+.nav-links.active{
+    display:flex;
+}
+
+.nav-links li{
+    width:100%;
+    text-align:center;
+}
+
+.nav-links a{
+    display:block;
+    padding:10px;
+}
+
+.products-banner h1{
+    font-size:38px;
+}
+
+}
+    </style>
+    </head>
+</html>
